@@ -70,7 +70,6 @@
     height: 100%;
     cursor: pointer;
 }
-
 .body-character h4 {
     text-align: center;
     margin: auto;
@@ -214,6 +213,7 @@ button {
 @media (max-width: 560px) {
     .container-main {
         align-content: center;
+        height: 100vh;
     }
     .first-content{
         width: 100vw;
@@ -222,6 +222,17 @@ button {
         margin: auto;
         width: 80vw;
     };
+    .second-content {
+        rotate: 90deg !important;
+        display: none;
+        width: 30vw;
+        height: 50%;
+    }
+    .body-character {
+        width: 150%;
+        height: 100%;
+        cursor: pointer;
+    }
     .title {
         margin-bottom: 1rem !important;
     }
