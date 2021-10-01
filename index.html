@@ -17,6 +17,40 @@
   <body>
     <div class="container-main container-fluid d-flex">
         <!-- First content -->
+        <!-- Vertically centered scrollable modal -->
+        <!-- Modal -->
+        <div class="modal fade modal-dialog-scrollable" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Panduan Bermain</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h1>Perangkat</h1>
+                <p>Desain dari program ini saat ini hanya bisa maksimal di perangkat desktop, jika kamu ingin mencoba di perangkat smartphone, maka pastikan kamu menyalakan pengaturan "Situs desktop" seperti pada gambar di bawah.</p>
+                <img src="assets/gambar-13.jpg" class="img-guide" alt="">
+
+                <h1>Cara Bermain</h1>
+                <br>
+                <h3>Memilih Karakter</h3>
+                <p>Setelah kamu memasukkan username, kamu akan dihadapkan pada tampilan untuk memilih karakter, karakter ini tidak mempengaruhi apapun dalam pengalaman bermain, jadi kamu dapat memilih karakter hijau, atau biru. Setelah memilih karakter, kamu bisa langsung menekan tombol play</p>
+                <img src="assets/gambar-2.PNG" id="gambar-2" class="img-guide" alt="">
+                <h3 class="mt-5">Mulai Bermain</h3>
+                <img src="assets/gambar-3.PNG" id="gambar-3" class="img-guide" alt="">
+                <p>Setelah kamu menekan tombol play, kamu langsung dihadapkan pada tampilan seperti gambar di atas ini, permainan ini berjalan dengan sistem bergiliran, dimana kamu dan komputer akan bergantian untuk menyerang satu sama lain, masing-masing pemain memiliki waktu sekitar 6 detik untuk memilih jurus(setelah kamu menekan tombol play, waktumu langsung berjalan, jadi siap siap ya!).<br><img src="assets/gambar-5.PNG" id="gambar-5" class="img-guide" alt=""> <p>Pada tampilan ini kamu bisa lihat ada sebuah kotak berwarna merah di tengah halaman, kotak ini berisi informasi yang harus kamu perhatikan. Pada baris pertama, menunjukan giliran pemain, jika ada nama kamu, berarti sekarang giliran kamu dan komputer hanya menuggu, jika giliran komputer maka sebaliknya. angka dibawah nama pemain adalah waktu hitung mundur selama 6 detik, selama waktu belum selesai maka masih premain masih bebas untuk me-random jurus sesuka hati(nama jurus ada di bawah waktu, kemudian di bawahnya merupakan damage dari jurus tersebut). perlu diingat, jika kamu sudah yakin dengan jurus yang mau kamu pilih, kamu harus menekan tombol pick, kamu tidak bisa menyerang sebelum menekan tombol pick, dan setelah menekan tombol pick, kamu tidak bisa me-random ulang, yang kamu harus lakukan selanjutnya adalah segera menekan tombol attack sebelum waktumu habis.<p><strong>Catatan</strong>, jika nama jurus yang kamu pilih adalah <em>health</em>, maka kamu tidak akan menyerang musuh, melainkan kamu memakai kesempatan kamu untuk menambah nyawa, begitupula jika kamu memilih jurus <em>stamina</em>.</p></p></p>
+                <img src="assets/gambar-6.PNG" id="gambar-6" class="img-guide" alt="">
+                <p>pada gambar di atas, menunjukan 2 buah parameter di atas body pemain, parameter yang paling atas merupakan nyawa, dibawahnya merupakan stamina. Stamina pemain akan berkurang setiap menyerang, perhitungannya adalah: "damage jurus yang di pilih" - 3. contoh: jika pemain memilih jurus wind yang memiliki damage 13, maka stamina akan dikurang 10.</p><br><img src="assets/gambar-8.PNG" id="gambar-8" class="img-guide" alt=""><p>Pada gambar ini, menunjukan bahwa jika stamina pemain sudah habis, maka nyawa akan selalu berkurang sebanyak 6 per detik, jika kamu tidak ingin nyawamu habis, segera cari jurus stamina.</p>
+                <p>skor pemain akan bertambah 1 setiap menang</p>
+                <h3>Selamat Bermain!</h3>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="first-content container-fluid flex-column justify-content-center">
             <h1 class="title text-danger">Fighting Game.</h1>
             <form class="form-floating mb-3 d-flex flex-column needs-validation novalidate">
@@ -24,7 +58,7 @@
                     
                 <label for="floatingInput">Username</label>
                 <button id="submit" class="btn btn-danger">Submit</button>
-                <h5 class="mx-auto mt-5" id="text-guide" onclick="guide()">Baca panduan bermain terlebih dahulu, klik disini</h5 class="mx-auto mt-5" >
+                <h5 class="mx-auto mt-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="text-guide" onclick="guide()">Baca panduan bermain terlebih dahulu, klik disini</h5 class="mx-auto mt-5" >
             </form>
         </div>
         <!-- First content end -->
