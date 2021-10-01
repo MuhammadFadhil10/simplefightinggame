@@ -121,7 +121,42 @@ button {
     
     font-size: 1.3rem !important;
 }
+#text-guide {
+    color: #ddd;
+    cursor: pointer;
+}
+#text-guide:hover {
+    color: #b19d9d;
+}
 
+.img-guide {
+    width: 50%;
+    height: 15rem;
+    background-color: #424242;
+    margin: 1rem 7.5rem;
+}
+#gambar-2 {
+    width: 60%;
+    height: 15rem;
+    background-color: #424242;
+    margin: auto 6rem;
+}
+#gambar-3 {
+    width: 100%;
+    height: 17rem;
+    background-color: #424242;
+    margin: auto ;
+}
+#gambar-5 {
+    width: 70%;
+    height: 17rem;
+    margin: auto 5rem;
+}
+#gambar-6, #gambar-8, #gambar-13 {
+    width: 70%;
+    /* height: 17rem; */
+    margin: auto 5rem;
+}
 .health-border {
     border: 1px solid black;
     height: 15%;
