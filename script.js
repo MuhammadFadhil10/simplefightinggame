@@ -491,7 +491,9 @@ let damageQueue = document.querySelector('.skills-damage');
 const pickSkillsButton = document.querySelector('#pick')
 const randomSkillsButton = document.querySelector('#random')
 
-
+function guide() {
+    alert('berhasil');
+}
 // FUNCTION
 // skills Randomize
 // function randomSkills 
